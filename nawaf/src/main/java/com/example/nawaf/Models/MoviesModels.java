@@ -17,13 +17,13 @@ public class MoviesModels {
     private String Series_Title;
 
     @Column(name="Released_Year")
-    private int Released_Year;
+    private String Released_Year;
 
     @Column(name="Certificate")
     private String Certificate;
 
     @Column(name="Runtime")
-    private int Runtime;
+    private String Runtime;
 
     @Column(name="Genre")
     private String Genre;
@@ -32,16 +32,16 @@ public class MoviesModels {
     @Column(name="IMDB_Rating")
     private double IMDB_Rating;
 
-    @Column(name="Overview")
+    @Column(name="Overview",columnDefinition = "TEXT")
     private String Overview;
 
     
     @Column(name="Meta_score")
-    private int Meta_score;
+    private String Meta_score;
 
 
     @Column(name="No_of_Votes")
-    private int No_of_Votes;
+    private String No_of_Votes;
 
 
 
