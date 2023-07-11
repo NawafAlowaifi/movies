@@ -11,8 +11,8 @@ import com.example.nawaf.Services.MoviesServices;
 
 @Service
 public class MoviesServicesimpl implements MoviesServices {
+    // @Autowired
     private final MoviesRepo moviesRepo;
-    @Autowired
     public MoviesServicesimpl (MoviesRepo MoviesRepo){
         this.moviesRepo=MoviesRepo;
     }

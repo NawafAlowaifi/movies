@@ -10,6 +10,6 @@ import com.example.nawaf.Models.MoviesModels;
 public interface MoviesServices {
     List<MoviesModels> findAllMovies();
     <Optional>MoviesModels findbyID(Long id);
-//     @Autowired
+    
 //   <optional> List<MoviesModels> FindTop10();
 }

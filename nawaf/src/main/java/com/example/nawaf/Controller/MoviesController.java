@@ -2,6 +2,7 @@ package com.example.nawaf.Controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import com.example.nawaf.Services.MoviesServices;
 @RequestMapping("/Movie")
 public class MoviesController {
     private final MoviesServices MovieServices;
+    @Autowired
     public MoviesController(MoviesServices MoviesServices){
         this.MovieServices=MoviesServices;
 
