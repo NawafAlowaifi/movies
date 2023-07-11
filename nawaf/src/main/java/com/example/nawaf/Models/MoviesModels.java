@@ -37,11 +37,11 @@ public class MoviesModels {
 
     
     @Column(name="Meta_score")
-    private int Meta_score;
+    private Integer Meta_score;
 
 
     @Column(name="No_of_Votes")
-    private int No_of_Votes;
+    private Integer No_of_Votes;
 
 
 
