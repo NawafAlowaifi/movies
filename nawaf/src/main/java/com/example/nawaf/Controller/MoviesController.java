@@ -6,6 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,8 +17,8 @@ import com.example.nawaf.Services.MoviesServices;
 @RestController
 @RequestMapping("/Movie")
 public class MoviesController {
-    private final MoviesServices MovieServices;
     @Autowired
+    private final MoviesServices MovieServices;
     public MoviesController(MoviesServices MoviesServices){
         this.MovieServices=MoviesServices;
 
@@ -55,5 +57,11 @@ public class MoviesController {
     public List ShorterRunTime(){
         return MovieServices.ShorterRunTime();
     }
+    // @PostMapping("/add/")
+    // public boolean addMovie(@RequestBody MoviesModels moviesModels){
+    //    return MovieServices.AddMovie(moviesModels);
+       
+
+    // }
 
 }

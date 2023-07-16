@@ -1,43 +1,28 @@
-package com.example.nawaf.Models;
+package com.example.nawaf.dto.Response;
 
-import jakarta.persistence.*;
+import java.io.Serializable;
 
-@Entity
-@Table(name = "movies")
-public class MoviesModels {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+public class MovieResponse implements Serializable {
     private Long id;
 
-    @Column(name = "Poster_Link")
     private String Poster_Link;
 
-    @Column(name = "Series_Title",unique=true)
     private String Series_Title;
 
-    @Column(name = "Released_Year")
     private String Released_Year;
 
-    @Column(name = "Certificate")
     private String Certificate;
 
-    @Column(name = "Runtime")
     private String Runtime;
 
-    @Column(name = "Genre")
     private String Genre;
 
-    @Column(name = "IMDB_Rating")
     private double IMDB_Rating;
 
-    @Column(name = "Overview", columnDefinition = "TEXT")
     private String Overview;
 
-    @Column(name = "Meta_score")
     private Integer Meta_score;
 
-    @Column(name = "No_of_Votes")
     private Integer No_of_Votes;
 
     public Long getId() {
@@ -127,5 +112,4 @@ public class MoviesModels {
     public void setNo_of_Votes(Integer no_of_Votes) {
         No_of_Votes = no_of_Votes;
     }
-
 }

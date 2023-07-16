@@ -22,4 +22,6 @@ public interface MoviesServices {
     List TopMeta();
 
     List ShorterRunTime();
+
+    // boolean AddMovie(MoviesModels moviesModels);
 }

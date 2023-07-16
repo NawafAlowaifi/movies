@@ -12,6 +12,7 @@ import com.example.nawaf.Services.MoviesServices;
 
 @Service
 public class MoviesServicesimpl implements MoviesServices {
+       @Autowired
        private final MoviesRepo moviesRepo;
    
     public MoviesServicesimpl (MoviesRepo MoviesRepo){
@@ -47,5 +48,10 @@ public class MoviesServicesimpl implements MoviesServices {
     public List ShorterRunTime() {
        return moviesRepo.ShorterRunTime();
     }
+    // @Override
+    // public boolean AddMovie(MoviesModels moviesModels) {
+       
+
+    // }
     
 }

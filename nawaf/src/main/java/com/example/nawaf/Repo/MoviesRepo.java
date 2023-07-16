@@ -32,4 +32,8 @@ public interface MoviesRepo extends JpaRepository<MoviesModels, Long> {
     @Query(nativeQuery = true, value = "SELECT series_title ,CONCAT(CAST(shortest AS varchar),' min') as shortest FROM( SELECT series_title,CAST(SUBSTRING(runtime,1,3)AS int)  as shortest FROM movies order by shortest) as t")
     List ShorterRunTime();
 
+    
+
+
+
 }
